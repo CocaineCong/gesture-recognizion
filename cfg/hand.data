@@ -1,0 +1,14 @@
+cfg_model=yolo
+classes=1
+gpus = 0
+num_workers = 12
+batch_size = 8
+img_size = 416
+multi_scale = True
+epochs = 100
+train=./datasets_fusion_hand_train/anno/train.txt
+valid=./datasets_fusion_hand_train/anno/train.txt
+names=./cfg/hand.names
+finetune_model = ./weights-yolov3/yolov3.pth
+lr_step = 20,50,80
+lr0 = 0.0001
